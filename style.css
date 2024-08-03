@@ -289,7 +289,7 @@ body {
 }
 .service-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 45px;
   margin-top: 10px;
 }
@@ -306,7 +306,6 @@ body {
   position: relative;
 }
 .service-list div:hover {
-  background: #e9b7b7;
   transform: scale(1.03);
 }
 .service-list div::before {
