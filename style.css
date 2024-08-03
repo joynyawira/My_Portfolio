@@ -377,16 +377,16 @@ body {
 }
 
 /* projects */
-.main-text{
+.project{
   padding-top: 3px;
   margin-top: 5px;
 }
-.main-text h2{
+h2{
   font-size: 40px;
   line-height: 1;
   text-align: center;
 }
-.main-text h2 span{
+h2 span{
   color:#71b7e6;
 }
 .portfolio-content{
