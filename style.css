@@ -298,7 +298,7 @@ body {
   color: #000000e3;
   padding: 40px;
   font-size: 15px;
-  font-weight: 13px;
+  font-weight: 500;
   border-right: 10px;
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
@@ -577,82 +577,6 @@ footer {
   }
 }
 
-
-/* Responsive Media Queries */
-
-/* For devices between 576px and 820px */
-@media screen and (min-width: 576px) and (max-width: 820px) {
-  .header {
-    padding: 20px 5%;
-  }
-  
-  .navbar a {
-    font-size: 20px;
-    margin-left: 20px;
-  }
-  
-  .home {
-    height: 500px;
-  }
-  
-  .home-content h1 {
-    font-size: 36px;
-  }
-  
-  .home-content p {
-    font-size: 18px;
-  }
-  
-  .service-list div {
-    font-size: 14px;
-  }
-  
-  .service-list div h2 {
-    font-size: 24px;
-  }
-  
-  .skills-list li {
-    width: 45%;
-  }
-}
-
-/* For devices between 280px and 576px */
-@media screen and (min-width: 280px) and (max-width: 576px) {
-  .header {
-    padding: 15px 2%;
-  }
-  
-  .navbar a {
-    font-size: 18px;
-    margin-left: 10px;
-  }
-  
-  .home {
-    height: 400px;
-    padding: 60px 5% 0;
-  }
-  
-  .home-content h1 {
-    font-size: 28px;
-  }
-  
-  .home-content p {
-    font-size: 16px;
-  }
-  
-  .service-list div {
-    font-size: 12px;
-  }
-  
-  .service-list div h2 {
-    font-size: 20px;
-  }
-  
-  .skills-list li {
-    width: 100%;
-  }
-}
-
 /* Hide hamburger menu on desktop and show it on small screens */
 @media screen and (min-width: 821px) {
   .hamburger {
@@ -670,137 +594,67 @@ footer {
   }
 }
 
-/* Additional tweaks for very small screens */
-@media screen and (max-width: 320px) {
-  .home-content h1 {
-    font-size: 24px;
-  }
-  
-  .home-content p {
-    font-size: 14px;
-  }
-  
-  .service-list div h2 {
-    font-size: 18px;
-  }
-}
-
-
-/* Home Section */
-
-/* For screens between 576px and 820px */
+/* For devices between 576px and 820px */
 @media screen and (min-width: 576px) and (max-width: 820px) {
+  .header {
+    padding: 20px 5%;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
   .home {
     height: 550px;
     padding: 50px 8% 0;
   }
-  .home-content h3 {
-    font-size: 28px;
-  }
+
   .home-content h1 {
     font-size: 48px;
   }
+
+  .home-content h3 {
+    font-size: 28px;
+  }
+
   .home-content p {
     font-size: 18px;
   }
-  .btn-box {
-    font-size: 14px;
-    padding: 10px 18px;
-  }
-  .home-sci a {
-    width: 35px;
-    height: 35px;
-    font-size: 28px;
-  }
-}
 
-/* CSS for mobile devices */
-@media screen and (min-width: 280px) and (max-width: 576px) {
-  .home {
-    height: 450px;
-    padding: 30px 5% 0;
-  }
-  .home-content h3 {
-    font-size: 24px;
-  }
-  .home-content h1 {
-    font-size: 36px;
-  }
-  .home-content p {
-    font-size: 16px;
-  }
-  .btn-box {
-    font-size: 12px;
-    padding: 8px 16px;
-  }
-  .home-sci a {
-    width: 30px;
-    height: 30px;
-    font-size: 24px;
-  }
-}
-
-/* About Section */
-
-/* For screens between 576px and 820px */
-@media screen and (min-width: 576px) and (max-width: 820px) {
-  .about {
-    padding: 40px 15px;
-  }
-  .about h2 {
-    font-size: 28px;
-  }
-  .about h4 {
-    font-size: 22px;
-  }
-  .about p {
+  .service-list div {
     font-size: 14px;
   }
-  .about ul li {
-    font-size: 1em;
-  }
-}
 
-/* CSS for mobile devices */
-@media screen and (min-width: 280px) and (max-width: 576px) {
-  .about {
-    padding: 30px 10px;
-  }
-  .about h2 {
+  .service-list div h2 {
     font-size: 24px;
-    margin-top: 30px;
   }
-  .about h4 {
-    font-size: 20px;
-  }
-  .about p {
-    font-size: 12px;
-  }
-  .about ul li {
-    font-size: 0.9em;
-  }
-}
 
-/* Projects section */
+  .skills-list li {
+    width: 45%;
+  }
 
-/* For screens between 576px and 820px */
-@media screen and (min-width: 576px) and (max-width: 820px) {
   .portfolio-content {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    margin-top: 20px; /* Adjust spacing as needed */
+    margin-top: 20px;
   }
+
   .row img {
     width: 100%;
   }
+
   .layer {
-    padding: 20px; /* Adjust padding for smaller screens */
+    padding: 20px;
   }
+
   .layer h5 {
-    font-size: 18px; /* Adjust font size */
+    font-size: 18px;
   }
+
   .layer p {
-    font-size: 0.9rem; /* Adjust font size */
+    font-size: 0.9rem;
   }
+
   .layer i {
     font-size: 18px;
     width: 50px;
@@ -808,27 +662,195 @@ footer {
   }
 }
 
-/* CSS for mobile devices */
+/* For devices between 280px and 576px */
 @media screen and (min-width: 280px) and (max-width: 576px) {
-  .portfolio-content {
-    grid-template-columns: 1fr; /* Single column layout for mobile */
-    margin-top: 20px; /* Adjust spacing as needed */
+  .header {
+    padding: 15px 2%;
   }
+
+  .navbar a {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .home {
+    height: 450px;
+    padding: 30px 5% 0;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .service-list div {
+    font-size: 12px;
+  }
+
+  .service-list div h2 {
+    font-size: 20px;
+  }
+
+  .skills-list li {
+    width: 100%;
+  }
+
+  .btn-box {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .home-sci a {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+  }
+
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about h4 {
+    font-size: 22px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .about ul li {
+    font-size: 1em;
+  }
+
+  .portfolio-content {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
   .row img {
     width: 100%;
   }
+
   .layer {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px;
   }
+
   .layer h5 {
-    font-size: 16px; /* Adjust font size */
+    font-size: 16px;
   }
+
   .layer p {
-    font-size: 0.8rem; /* Adjust font size */
+    font-size: 0.8rem;
   }
+
   .layer i {
     font-size: 16px;
     width: 40px;
     height: 40px;
+  }
+}
+
+/* Additional tweaks for very small screens */
+@media screen and (max-width: 320px) {
+  .home-content h1 {
+    font-size: 24px;
+  }
+
+  .home-content p {
+    font-size: 14px;
+  }
+
+  .service-list div h2 {
+    font-size: 18px;
+  }
+}
+
+/* Adjust for very large screens */
+@media screen and (max-width: 1200px) {
+  .service-list {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+/* Adjust for medium screens */
+@media screen and (max-width: 992px) {
+  .home {
+    height: 500px;
+    padding: 50px 5%;
+  }
+
+  .home-content h1 {
+    font-size: 42px;
+  }
+
+  .home-content h3 {
+    font-size: 24px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+}
+
+/* Adjust for small screens */
+@media screen and (max-width: 768px) {
+  .home {
+    height: 400px;
+    padding: 30px 5%;
+  }
+
+  .home-content h1 {
+    font-size: 32px;
+  }
+
+  .home-content h3 {
+    font-size: 20px;
+  }
+
+  .home-content p {
+    font-size: 14px;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 15px 5%;
+  }
+
+  .header .log {
+    font-size: 20px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
+
+  .btn-box {
+    padding: 10px 15px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about h4 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .heading1 {
+    font-size: 16px;
   }
 }
