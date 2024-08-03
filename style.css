@@ -686,6 +686,102 @@ footer {
   }
 }
 
+
+/* Home Section */
+
+/* For screens between 576px and 820px */
+@media screen and (min-width: 576px) and (max-width: 820px) {
+  .home {
+    height: 550px;
+    padding: 50px 8% 0;
+  }
+  .home-content h3 {
+    font-size: 28px;
+  }
+  .home-content h1 {
+    font-size: 48px;
+  }
+  .home-content p {
+    font-size: 18px;
+  }
+  .btn-box {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+  .home-sci a {
+    width: 35px;
+    height: 35px;
+    font-size: 28px;
+  }
+}
+
+/* CSS for mobile devices */
+@media screen and (min-width: 280px) and (max-width: 576px) {
+  .home {
+    height: 450px;
+    padding: 30px 5% 0;
+  }
+  .home-content h3 {
+    font-size: 24px;
+  }
+  .home-content h1 {
+    font-size: 36px;
+  }
+  .home-content p {
+    font-size: 16px;
+  }
+  .btn-box {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  .home-sci a {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+  }
+}
+
+/* About Section */
+
+/* For screens between 576px and 820px */
+@media screen and (min-width: 576px) and (max-width: 820px) {
+  .about {
+    padding: 40px 15px;
+  }
+  .about h2 {
+    font-size: 28px;
+  }
+  .about h4 {
+    font-size: 22px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+  .about ul li {
+    font-size: 1em;
+  }
+}
+
+/* CSS for mobile devices */
+@media screen and (min-width: 280px) and (max-width: 576px) {
+  .about {
+    padding: 30px 10px;
+  }
+  .about h2 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  .about h4 {
+    font-size: 20px;
+  }
+  .about p {
+    font-size: 12px;
+  }
+  .about ul li {
+    font-size: 0.9em;
+  }
+}
+
 /* Projects section */
 
 /* For screens between 576px and 820px */
