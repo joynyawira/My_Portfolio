@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="log">Portfolio.</a>
+      <nav class="navbar">
+        <a href="#home" style="--i:1" class="active">Home</a>
+        <a href="#about" style="--i:2">About</a>
+        <a href="#skills" style="--i:3">Skills</a>
+        <a href="#services" style="--i:4">Services</a>
+        <a href="#portfolio" style="--i:5">Portfolio</a>
+        <a href="#contact" style="--i:6">Contact</a>
+      </nav>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class='bx bx-menu'></i>  
+      </div>
+    </header>
+
+    <!--home content-->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Joy Nyawira</h1>
+        <h3>A <span>Web Developer</span></h3>
+        <p>My expertise is to create and design websites, frontend and many more...</p>
+        <div class="home-sci">
+          <a href="https://wa.me/254113583619" target="_blank" style="--i:7"><i class='bx bxl-whatsapp'></i></a>
+          <a href="https://github.com/joynyawira" target="_blank" style="--i:8"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/joynyawira7@gmail.com" target="_blank" style="--i:9"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://www.instagram.com/_joynyawira" style="--i:10" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <a href="#about" class="btn-box">More About Me</a>
+      </div>
+      <span class="home-imgHover"></span>
+    </section>
+
+    <!--About Section-->
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Web Developer!</h4>
+        <p>
+          I am an IT professional with a Bachelor of Science in Information and Technology, specializing in web development and technology advancement at large. I'm passionate about transforming ideas into practical solutions. I have a strong track record of creating user-friendly and visually appealing digital experiences.
+          I excel in crafting intuitive and visually appealing user interfaces for web applications, enhancing user satisfaction through design.
+          I'm dedicated to taking on new challenges in the ever-evolving world of technology. Let's connect and explore how I can help bring your projects to life.
+        </p>
+        <h1 class="heading1">Hobbies and Interests</h1>
+        <ul>
+          <li><span>Reading Novels</span></li>
+          <li><span>Playing Draft</span></li>
+          <li><span>Swimming</span></li>
+          <li><span>Nature Walks</span></li>
+          <li><span>Listening to Music</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!--My skills section-->
+    <section class="skills" id="skills">
+      <h1 class="sub-title">My <span>Skills</span></h1>
+      <div class="tab-container">
+        <div class="tab-contents" id="tskills">
+          <ul class="skills-list">
+            <li><i style="color:#c95d2e" class='bx bxl-html5'></i><span>HTML</span></li>
+            <li><i style="color:#147bbc" class='bx bxl-css3'></i><span>CSS</span></li>
+            <li><i style="color:#b0bc1e" class='bx bxl-javascript'></i><span>JavaScript</span></li>
+            <li><i style="color:#007bff" class='bx bxl-php'></i><span>PHP</span></li>
+            <li><i style="color:#c32ec9" class='bx bxl-python'></i><span>Python</span></li>
+            <li><i style="color:#00758F" class='bx bx-cylinder'></i><span>MySQL</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--My Services section-->
+    <section class="services" id="services">
+      <h1 class="sub-title">My <span>Services</span></h1>
+      <div class="service-list">
+        <div>
+          <i class='bx bx-crop'></i>
+          <h2>Web Design</h2>
+          <p>Creating dynamic and responsive websites that provide an optimal user experience across all devices using HTML, CSS, JavaScript, PHP, React, and Node.js.</p>
+        </div>
+        <div>
+          <i class='bx bx-data'></i>
+          <h2>Database Design</h2>
+          <p>Designing, implementing, and maintaining databases to support web applications and ensure that your data is stored securely and accessed efficiently.</p>
+        </div>
+        <div>
+          <i class='bx bx-file'></i>
+          <h2>Blockchain Solution</h2>
+          <p>Expertise in developing decentralized applications and smart contracts using Ethereum, Node.js, Web3, MetaMask, and Solidity.</p>
+        </div>
+        <div>
+          <i class='bx bx-search'></i>
+          <h2>Search Engine Optimization (SEO)</h2>
+          <p>Specializing in optimizing websites to improve their visibility and ranking on search engines.</p>
+        </div>
+        <div>
+          <i class='bx bx-chat'></i>
+          <h2>Consulting and Strategy</h2>
+          <p>Providing expert advice on technology solutions, system design, hosting, and implementation strategies.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Projects-->
+    <section class="project" id="portfolio">
+      <h2>My <span>Projects</span></h2>
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="tax.png" alt="Housing Taxation System">
+          <div class="layer">
+            <h5>Housing Taxation System</h5>
+            <p>A web application designed to calculate and manage housing taxes for homeowners and local governments.</p>
+            <a href="tax.html"><i class='bx bx-link external' style="color: aliceblue;"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <img src="land.png" alt="Land Leasing Membership">
+          <div class="layer">
+            <h5>Land Leasing Membership</h5>
+            <p>A web application designed to manage land leasing memberships for farmers and landowners.</p>
+            <a href="lease.html"><i class='bx bx-link external' style="color: aliceblue;"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <img src="form.png" alt="Refund Form">
+          <div class="layer">
+            <h5>Refund Form</h5>
+            <p>A web application designed to manage refund forms for customers.</p>
+            <a href="refund.html"><i class='bx bx-link external' style="color: aliceblue;"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <img src="block.png" alt="Blockchain Land Registry">
+          <div class="layer">
+            <h5>Blockchain Land Registry</h5>
+            <p>A web application designed to manage land registry using blockchain technology.</p>
+            <a href="registry.html"><i class='bx bx-link external' style="color: aliceblue;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <section class="contact" id="contact">
+        <div class="contact-text">
+          <h2>Contact <span>Me</span></h2>
+          <h1>Let's Work Together</h1>
+          <div class="contact-list">
+            <li><i class='bx bxs-send'></i>joynyawira7@gmail.com</li>
+            <li><i class='bx bxs-phone'></i>+254 113 583 619</li>
+          </div>
+          <div class="contact-icons">
+            <a href="https://wa.me/254113583619" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://github.com/joynyawira" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/joynyawira7@gmail.com" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/_joynyawira" style="--i:10" target="_blank"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+    <script src="script.js"></script>
+  </body>
+</html>
