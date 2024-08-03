@@ -269,69 +269,58 @@ body {
   color: #333;
 }
 
-/* Services Section */
+/* Services */
 #services {
   color: aliceblue;
-  font-size: 16px;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 1.4;
   margin-bottom: 3rem;
 }
-
 .sub-title {
   text-align: center;
-  font-size: 60px;
+  font-size: 36px;
   padding-bottom: 10px;
 }
-
 .sub-title span {
   color: #71b7e6;
 }
-
 .nav-box {
-  padding: 90px;
+  padding: 70px;
 }
-
 .service-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 45px;
   margin-top: 10px;
 }
-
 .service-list div {
   background-color: #fde5e5de;
   color: #000000e3;
-  padding: 30px;
+  padding: 40px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 13px;
+  border-right: 10px;
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
-  box-shadow: 1px 1px 20px rgb(36, 159, 241),
-               1px 1px 20px rgb(172, 5, 238);
+  box-shadow: 1px 1px 20px rgb(36, 20, 20);
+  position: relative;
 }
-
-.service-list div i {
-  font-size: 40px;
-  margin-bottom: 12px;
-}
-
-.service-list div h2 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.service-list div a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
 .service-list div:hover {
-  background: #288cce;
-  transform: translateY(-10px);
+  background: #e9b7b7;
+  transform: scale(1.03);
+}
+.service-list div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #71b7e6, #9b59b6);
+  transition: width 0.5s ease-in-out;
+}
+.service-list div:hover::before {
+  width: 5px;
 }
 
 /* Skills Section */
