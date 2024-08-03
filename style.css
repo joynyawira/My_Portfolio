@@ -305,6 +305,46 @@ body {
   box-shadow: 1px 1px 20px rgb(36, 20, 20);
   position: relative;
 }
+
+.service-list div h2 {
+  font-size: 24px; 
+  font-weight: 600; 
+  margin-top: 15px; 
+  margin-bottom: 10px; 
+  color: #000; 
+  transition: color 0.3s; 
+}
+
+.service-list div p {
+  font-size: 16px; 
+  color: #000; 
+  line-height: 1.6; 
+  margin: 0; 
+  transition: color 0.3s;
+}
+
+/* Styling for i within service-list div */
+.service-list div i {
+  display: block; 
+  margin: 0 auto;
+  font-size: 30px;
+  transition: color 0.3s, transform 0.3s; 
+}
+
+/* Hover effects */
+.service-list div:hover h2 {
+  color: #71b7e6; /* Change color on hover */
+}
+
+.service-list div:hover p {
+  color: #333; /* Change color on hover */
+}
+
+.service-list div:hover i {
+  color: #9b59b6; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
 .service-list div i{
   font-size: 25px;
 }
