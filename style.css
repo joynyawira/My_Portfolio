@@ -671,7 +671,6 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
     margin-top: 10px;
   }
-
   .portfolio-content {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin-top: 10px;
