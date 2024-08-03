@@ -670,6 +670,11 @@ footer {
   .skills-list li {
     width: 45%;
   }
+  .skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    margin-top: 10px;
+  }
 
   .portfolio-content {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
