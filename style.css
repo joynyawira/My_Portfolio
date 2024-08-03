@@ -294,7 +294,7 @@ body {
   margin-top: 10px;
 }
 .service-list div {
-  background-color: #fde5e5de;
+  background-color: #fff;
   color: #000000e3;
   padding: 40px;
   font-size: 15px;
@@ -304,6 +304,9 @@ body {
   transition: background 0.5s, transform 0.5s;
   box-shadow: 1px 1px 20px rgb(36, 20, 20);
   position: relative;
+}
+.service-list div i{
+  font-size: 25px;
 }
 .service-list div:hover {
   transform: scale(1.03);
