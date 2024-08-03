@@ -390,6 +390,7 @@ h2 span{
   color:#71b7e6;
 }
 .portfolio-content{
+  margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(450px ,auto));
 }
