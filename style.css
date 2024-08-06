@@ -75,7 +75,7 @@ body {
     position: absolute;
     top: 60px;
     right: 0;
-    width: 45%;
+    width: 65%;
     padding: 20px 0;
   }
   
@@ -363,7 +363,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 800px;
   padding: 10px;
 }
 
