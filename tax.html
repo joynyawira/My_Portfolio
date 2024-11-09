@@ -9,36 +9,68 @@
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
+      :root{
+  --main-color:#d7c7ae;
+  --primary-color:#8a6d46;
+  --hover:linear-gradient(135deg, #153b57, #330e41);
+  --black:#2a201c;
+  --white:#fff;
+  --light-bg:#f3efec;
+  --dark-bg:rgba(0,0,0);
+  --border:.1rem solid #aaa;
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --background: linear-gradient(135deg, #0e283b, #17061d);
+
+}
+.content{
+  background: var(--dark-bg);
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.content-text{
+  background:rgb(2, 2, 2);
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px solid rgb(240, 228, 228);
+  box-shadow: 0 2px 10px rgba(235, 228, 228, 0.1);
+}
+
      main {
-      background-color: #fff;
+      background-color: var(--dark-bg);
       padding: 40px 20px;
       margin: 20px auto;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       max-width: 600px;
 }
 
 h1 {
+  margin-bottom: 7px;
+  color: var(--primary-color);
   font-size: 28px;
   text-align: center;
-  margin-top: 70px;
   border-bottom: 2px solid #979696;
-  margin-bottom: 20px;
-  color: #081b29;
 }
 
 h2 {
- color: black;  
+ color: var(--black);  
  font-size: 20px;
 }
 p{
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
-  color: black;
+  color: var(--white);
 }
 ul {
-  color:black;
+  color:var(--light-bg);
     list-style-type: disc;
     margin: 10px 0;
     padding-left: 20px;
@@ -46,48 +78,71 @@ ul {
 
 ul li {
     margin-bottom: 5px;
+    font-size: 18px;
 }
 
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #0a2a43;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--background);
+  border-radius: 40px;
+  font-size: 16px;
+  color:var(--white);
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+
 }
 
 .button:hover {
-    background-color: #082033;
-    transform: scale(1.05); 
+  background: var(--hover);
 }
+@media (max-width: 600px) {
+        .content-text {
+          padding: 30px 10px;
+        }
+        
+        h1 {
+          font-size: 24px;
+        }
+        
+        h2 {
+          font-size: 18px;
+        }
+        
+        p, ul li {
+          font-size: 16px;
+        }
 
-.button:active {
-    background-color: #02101a; 
-    transform: scale(0.98); 
-}
+        .button {
+          padding: 10px 15px;
+          font-size: 14px;
+        }
+      }
 
     </style>
   </head>
   <body>
     <header class="header">
-      <a href="#" class="log">Portfolio.</a>
+      <a href="#" class="logo">Portfolio.</a>
 
       <nav class="navbar">
-        <a href="index.html" style="--i:1" class="active">Home</a>
-        <a href="#about" style="--i:2">About</a>
-        <a href="#skills" style="--i:3">Skills</a>
-        <a href="#services" style="--i:4">Services</a>
-        <a href="#portfolio" style="--i:5">Portfolio</a>
-        <a href="#contact" style="--i:6">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="#about" >About</a>
+        <a href="#skills" >Skills</a>
+        <a href="#services" >Services</a>
+        <a href="#portfolio" >Project</a>
+        <a href="#contact" >Contact</a>
       </nav>
+
+       <!-- Hamburger Icon -->
+       <div class="hamburger" onclick="toggleMenu()">
+        <i class='bx bx-menu'></i>  
+      </div>
     </header>
-    <main>
-      <h1>Housing Taxation System</h1>
+    <section class="content">
+      <div class="content-text">
+        <h1>Housing Taxation System</h1>
       <section>
         <p>
           The Housing Taxation System is a web application designed to calculate and manage housing taxes for homeowners and local governments. Homeowners can register on the platform to pay their taxes, while government officials, acting as admins, can approve registrations and apply penalties for delayed payments.
@@ -106,8 +161,15 @@ ul li {
               <li>Tax payment integration</li>
               <li>User and admin dashboards</li>
           </ul>
-      </section>
       <a href="index.html" class="button">Back to Portfolio</a>
-  </main>
+      </div>
+    </section>
+       <!-- JavaScript for toggling the hamburger menu -->
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+      }
+    </script>
 </body>
 </html>

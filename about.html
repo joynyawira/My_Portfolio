@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/104b0d0c77.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>More About Me</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio.</a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class='bx bx-menu'></i>  
+      </div>
+    </header>
+
+    <!-- More About Me Section -->
+    <section class="more-about">
+      <div class="more">
+        <div class="img_container">
+          <img src="images/img1.jpg" alt="Joy's Profile Picture">
+        </div>
+        <div class="content">
+          <h4>I'm a Web Developer</h4>
+          <p>
+            Hello, I am Joy, a web design, graphic design, blockchain, and data science enthusiast. My journey in the world of technology has allowed me to become a well-rounded expert in these fields.
+          </p>
+          <h1 class="heading1">Hobbies and Interests</h1>
+          <ul>
+            <li><span>Reading Novels</span></li>
+            <li><span>Playing Draft</span></li>
+            <li><span>Swimming</span></li>
+            <li><span>Nature Walks</span></li>
+            <li><span>Listening to Music</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+      <div class="education-content">
+        <h2>Education</h2>
+        <div class="text">
+          <h1>2024 - Currently</h1>
+          <h4><span>Web Development Course</span><br>Udemy/Online Platform</h4><br>
+
+          <h1>2021 - 2024</h1>
+          <h4><span>Bachelor Of Science In Information Technology</span><br>Zetech University</h4><br>
+
+          <h1>2022 July</h1>
+          <h4><span>Introduction To CyberSecurity</span><br>Cisco Networking Academy</h4><br>
+
+          <h1>2022 October</h1>
+          <h4><span>CyberSecurity Essentials</span><br>Cisco Networking Academy</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="professional">
+      <div class="professional_experience">
+        <h2>Work Experience</h2>
+        <div class="text">
+          <h1>2022 - Currently</h1>
+          <h4><span>Web Developer/Design</span><br>Freelancer</h4><br>
+
+          <h1>2024 - Currently</h1>
+          <h4><span>Graphic Design</span><br>Freelancer</h4><br>
+
+          <h1>2024 August - 2024 October</h1>
+          <h4><span>IT Support Intern</span><br>Petanns Technical Training Institute</h4><br>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Skills Section -->
+    <section class="other_skills">
+      <div class="skills-container">
+        <h2>Other Skills</h2>
+        <div class="text">
+          <h1>Web Development</h1>
+          <h4>HTML, CSS, JavaScript, PHP, Python</h4><br>
+
+          <h1>Database Management</h1>
+          <h4>MySQL, MS Access</h4><br>
+
+          <h1>Data Analytics</h1>
+          <h4>Python libraries - Pandas, Matplotlib, Seaborn</h4><br>
+
+          <h1>Graphic Design</h1>
+          <h4>Canva, Adobe Photoshop, MS Publisher</h4><br>
+
+          <h1>Version Control</h1>
+          <h4>Git, GitHub</h4><br>
+
+          <h1>Problem Solving and Critical Thinking</h1><br>
+
+          <h1>Attention to Details</h1><br>
+
+          <h1>Teamwork and Good Communication Skills</h1><br>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript for toggling the hamburger menu -->
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
