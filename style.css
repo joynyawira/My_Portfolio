@@ -708,7 +708,7 @@ footer {
   border-radius: 50%;
   text-decoration: none;
   transition: .5s ease;
-  color: var(--dark-bg);
+  color: var(--light-bg);
   margin: 15px 10px 15px 0;
 }
 
